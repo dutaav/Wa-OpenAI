@@ -1,5 +1,5 @@
-const sessionName = "yusril";
-const donet = "https://saweria.co/sansekai";
+const sessionName = "NinthGen Bot";
+const donet = "NinthGen";
 const {
   default: sansekaiConnect,
   useMultiFileAuthState,
