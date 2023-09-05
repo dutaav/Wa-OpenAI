@@ -27,6 +27,8 @@ const color = (text, color) => {
   return !color ? chalk.green(text) : chalk.keyword(color)(text);
 };
 
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
+
 function smsg(conn, m, store) {
   if (!m) return m;
   let M = proto.WebMessageInfo;
