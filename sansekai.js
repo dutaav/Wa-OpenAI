@@ -71,19 +71,28 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
     if (isCmd2) {
       switch (command) {
         case "help": case "menu": case "start": case "info":
-          m.reply(`*Whatsapp Bot OpenAI*
+          m.reply(`*Welcome to NinthGen Bot*
+
+NinthGen Bot adalah chatbot berbasis ChatGPT - OpenAI yang dilatih dengan menggunakan milyaran kalimat dari berbagai sumber
+
+Berikut beberapa hal yang dapat dilakukan NinthGen Bot
+-Teman belajar dan curhat
+-Pengganti Google Search
+-Menjelaskan suatu hal
+-Dapatkan ide seni, dekorasi, dan tema pesta
+-Dapatkan ide sesuatu
+-Menemukan jawaban pertanyaan tugas
+-Cari Lirik
+-Terjemahan
+-Membuat Coding
             
-*(ChatGPT)*
-Cmd: ${prefix}ai 
-Tanyakan apa saja kepada AI. 
+Ketik: ${prefix}ur *isi pesan*
+Untuk Berinteraksi dengan NinthGen Bot
 
-*(DALL-E)*
-Cmd: ${prefix}img
-Membuat gambar dari teks
+Mohon gunakan Bahasa yang baik dan benar agar dikenali oleh ur Assistant.
+Apabila chat mengandung unsur Sara, Porno, dan Kekerasan akan di-Blacklist!
 
-*(Source Code Bot)*
-Cmd: ${prefix}sc
-Menampilkan source code bot yang dipakai`)
+*_Created with NodeJS Using Library Baileys by dutaav*`)
           break;
         case "ai": case "openai": case "chatgpt": case "ask":
           try {
